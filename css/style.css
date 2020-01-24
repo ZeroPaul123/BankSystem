@@ -1,0 +1,272 @@
+textarea {
+  width: 720px; /*Breite gestreckt auf 100%*/
+  padding: 12px; /*Abstand innerhalb von 12px auf allen Seiten*/
+  border: 1px solid #ccc; /*Bordereinstellungen*/
+  border-radius: 4px; /*Abgerundete Ecken*/
+  box-sizing: border-box; /*Selbe Bordergöße*/
+  margin-top: 6px; /*Abstand außerhalb von 6px auf allen Seiten*/
+  margin-bottom: 16px; /*Abstand außerhalb von 16px nach unten*/
+  resize: vertical; /*Vertikal*/
+  font-family: Arial, sans-serif; /*Schriftart*/
+  font-size: 13px; /*Schriftgröße*/
+  overflow: auto; /*Scrollbar automatisisch*/
+  outline-color: blue;
+}
+
+input {
+  width: 256px; /*Breite gestreckt auf 100%*/
+  padding: 12px; /*Abstand innerhalb von 12px auf allen Seiten*/
+  border: 1px solid #ccc; /*Bordereinstellungen*/
+  border-radius: 4px; /*Abgerundete Ecken*/
+  box-sizing: border-box; /*Selbe Bordergöße*/
+  margin-top: 6px; /*Abstand außerhalb von 6px auf allen Seiten*/
+  margin-bottom: 16px; /*Abstand außerhalb von 16px nach unten*/
+  resize: vertical; /*Vertikal*/
+  font-family: Arial, sans-serif; /*Schriftart*/
+  font-size: 13px; /*Schriftgröße*/
+}
+
+input[type=submit] {
+  width: 180px; /*Breite gestreckt auf 100%*/
+  padding: 12px; /*Abstand innerhalb von 12px auf allen Seiten*/
+  border: 1px solid #ccc; /*Bordereinstellungen*/
+  border-radius: 4px; /*Abgerundete Ecken*/
+  box-sizing: border-box; /*Selbe Bordergöße*/
+  margin-top: 6px; /*Abstand außerhalb von 6px auf allen Seiten*/
+  margin-bottom: 16px; /*Abstand außerhalb von 16px nach unten*/
+  font-family: Arial, sans-serif; /*Schriftart*/
+  font-size: 13px; /*Schriftgröße*/
+}
+
+body {
+  margin: 0; /*Abstand außerhalb von 0px auf allen Seiten*/
+  width: 100%; /*Breite gestreckt auf 100%*/
+  height: 100vh; /*Höhe beträgt 100vh*/
+  font-family: "Exo", sans-serif; /*Schriftart*/
+  color: #fff; /*Textfarbe*/
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /*Hintergrundanimation*/
+  background-size: 400% 400%; /*Hintergrundgröße*/
+  animation: gradientBG 15s ease infinite; /*Animationseinstlelungen*/
+}
+
+.register {
+  font-size: 16px;
+  margin: -5px;
+}
+
+.output {
+  color: #E1E1E1;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: -200px;
+  font-size: 20px;
+}
+
+.or {
+  font-size: 18px;
+  margin-top: -12px;
+  margin-left: 110px;
+
+}
+
+.link {
+  transition: 0.3s;
+  color: greenyellow;
+  text-decoration: none;
+}
+
+.link:hover {
+  transition: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+
+}
+
+.search-button {
+  margin-right: 39.5%;
+  width: 510px;
+}
+
+.data {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.data td, .data th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+}
+
+
+.data tr:hover {
+  background-color: rgb(199, 255, 188);
+  color: black;
+}
+
+.data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(76, 99, 175);
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .col { 
+    display: block;
+    width: 100%;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%; /*Hintergrundposition wenn 0% geht langsam in die Mitte (0% = oben links; 50% = mitte)*/
+  }
+  50% {
+    background-position: 100% 50%; /*Hintergrundposition wenn 50% geht nach unten rechts und wieder in die mitte (100% = unten rechts)*/
+  }
+  100% {
+    background-position: 0% 50%; /*Hintergrundposition wenn 100% geht nach oben links und wieder in die mitte*/
+  }
+}
+
+ul {
+  list-style-type: none; /*Die Navigation hat kein Style mehr*/
+  margin: 10px; /*Abstand außerhalb der Navigation von 10px*/
+  padding: 0; /*Abstand innerhalb der Navigation von 0px*/
+  overflow: hidden; /*Scrollbar nicht sichtbar*/
+  background-color: #333; /*Hintergrundfarbe der Navigation*/
+  border-radius: 10px; /*Abgerundete Ecken auf allen Seiten der Navigation*/
+}
+
+li.dropdown {
+  display: inline-block; /*Nebeneinander*/
+}
+
+
+li a, .dropbtn {
+  display: inline-block; /*Nebeneinander*/
+  color: white; /*Weisse Schriftfarbe*/
+  padding: 14px 16px; /*Abstand innerhalb der Navigation von 14px oben und unten + 16px rechts und links*/
+  text-decoration: none; /*Keine Deko, d.h., nicht unterstrichen etc.*/
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #8B8B8B; /*Hintergrundfarbe, sobald man mit der Maus über eine Option geht*/
+}
+
+
+/*Inhalte im Dropdown*/
+.dropdown-content {
+  display: none; /*Nicht sichtbar*/
+  position: absolute; /*Absolute Position*/
+  background-color: #333; /*Hintergrundfarbe der Optionen im Dropdownmenü*/
+  min-width: 160px; /*Mindestbreite beträgt 160px*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Schatteneinstellungen*/
+z-index: 1; /*Transparenz*/
+  border-radius: 0px 0px 10px 10px; /*Abgerundete Ecken unten*/
+}
+
+.dropdown-content a {
+  color: grey; /*Schriftfarbe*/
+  padding: 12px 16px; /*Abstand innerhalb der Leiste von 12px oben und unten + 16px rechts und links*/
+  text-decoration: none; /*Keine Deko, d.h., nicht unterstreichen etc.*/
+  display: block; /*Content ist in einer Art Block*/
+  text-align: left; /*Linksbündig*/
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;  /*Hintergrundfarbe, wenn Maus über Content*/
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /*Content ist in einer Art Block*/
+}
+
+li {
+  float: left; /*Links "fliegen"*/
+}
+
+li a {
+  display: block; /*Content ist in einer Art Block*/
+  color: white; /*Schriftfarbe*/
+  text-align: center; /*Zentriert*/
+  padding: 14px 16px; /*Abstand innerhalb der Leiste von 14px oben und unten + 16px rechts und links*/
+  text-decoration: none; /*Keine Deko, d.h., nicht unterstreichen etc.*/
+}
+
+li a:hover:not(.active) {
+  background-color: #4A2C52; /*Hintergrundfarbe, wenn Maus über einem Unterpunkt aus der Navigation ist, welches nicht die Klasse active ist*/
+
+}
+
+.dropdown-first:hover {
+border-radius: 10px 0px 0px 10px; /*Links abgerundet, rechts gerade*/
+}
+
+.dropdown-second:hover {
+border-radius: 0px; /*Überall gerade*/
+}
+
+.dropdown-second-content-first:hover {
+border-radius: 0px; /*Überall gerade*/
+}
+
+.dropdown-second-content-second:hover {
+border-radius: 0px 0px 10px 10px; /*Unten abgerundet*/
+} 
+
+.article-title {
+  color: #eeeeee; /*Die Farbe des Titels*/
+  font-family: "League Gothic", Impact, sans-serif; /*Die Schriftart*/
+  line-height: 0.9em; /*Die Linienhöhe (sodass kein großer Abstand zwischen den Zeilen sind z.B.)*/
+  letter-spacing: 0.02em; /*Die Breite zwischen den Buchstaben*/
+  text-transform: uppercase; /*Der Text soll in Großbuchstaben sein*/
+  font-size: 65px; /*Die Schriftgröße*/
+  text-align: center; /*Der Text soll in der Mitte der Seite stehen*/
+  text-decoration: underline; /*Der Text soll unterstrichen sein*/
+}
+
+.article-success {
+  color: #eeeeee; /*Die Farbe des Titels*/
+  font-family: "League Gothic", Impact, sans-serif; /*Die Schriftart*/
+  line-height: 0.9em; /*Die Linienhöhe (sodass kein großer Abstand zwischen den Zeilen sind z.B.)*/
+  letter-spacing: 0.02em; /*Die Breite zwischen den Buchstaben*/
+  text-transform: uppercase; /*Der Text soll in Großbuchstaben sein*/
+  font-size: 35px; /*Die Schriftgröße*/
+  text-align: center; /*Der Text soll in der Mitte der Seite stehen*/
+  text-decoration: underline; /*Der Text soll unterstrichen sein*/
+  }
+
+h1 {
+  font-weight: 300; /*Das Gewicht des Textes, z.B. wenn es 700 ist, ist es dick (bold) etc.*/
+}
+
+h3 {
+  color: #eee; /*Farbe, wenn Maus darüber*/
+  font-weight: 100; /*Das Gewicht des Textes, z.B. wenn es 700 ist, ist es dick (bold) etc.*/
+}
+
+h5 {
+  color:#eee; /*Farbe, wenn Maus darüber*/
+  font-weight:300; /*Das Gewicht des Textes, z.B. wenn es 700 ist, ist es dick (bold) etc.*/
+}
+
+a,
+a:hover {
+  text-decoration: none; /*Keine Deko, d.h., nicht unterstreichen etc.*/
+  color: #ddd; /*Farbe, wenn Maus darüber*/
+}

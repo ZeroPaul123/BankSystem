@@ -1,0 +1,19 @@
+<?php
+session_start();
+if(empty($_SESSION['logged_in']))
+{
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . '/bank/login.php');
+    exit;
+} 
+
+include "getInfo.php";
+
+
+if($isCurrentlyAdmin == 0){
+    die("This Page is for Administrators only");
+    exit;
+}
+
+
+
+?>
