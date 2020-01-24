@@ -35,7 +35,7 @@ if(isset($_POST["loginEmail"])) {
 
 
     $loginEmail = $_POST["loginEmail"];   
-    $loginPassword = $_POST["loginPassword"];
+    $loginPassword = md5($_POST["loginPassword"]);
     $sql = "SELECT * FROM Persons WHERE Email='$loginEmail' and Pass='$loginPassword'";
 
     $result = $conn->query($sql);

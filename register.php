@@ -60,7 +60,7 @@ $adress = $_POST["registerAdress"];
 
 $email = $_POST["registerEmail"];
 
-$password = $_POST["registerPassword"];
+$password = md5($_POST["registerPassword"]);
 
 
 
