@@ -17,7 +17,7 @@ Admin Features:
 -View registered Users
 -Make other users admin
 
-#Instructions
+# Instructions
 
 1.) Download php files and upload them to your sever.
 2.) change the config.php file to fit your personal server data
