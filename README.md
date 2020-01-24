@@ -1,6 +1,6 @@
 # phpBankSystem
  
-Hey ther thanks for checking out my project. This is one of the first projects i made in php and i put quite much time into it, so i decided to publish it.
+Hey ther thanks for checking out my project. This is one of the first projects i made in php and i put quite much time into it, so i decided to publish it. Also i know the code is really messy in some parts, but this was bascially just to learn and nothing besides one weird foreach loop is copied. I learned alot of stuff but i wont bother to clean up this old code.
 
 Features:
 -Register
@@ -46,3 +46,5 @@ CREATE TABLE `transaction_log` (
 4.) Register at the register.php page.
 5.) Go into phpmyadmin and change the "isAdmin" value of your account to "1"
 6.) You are ready to go, You now have access to the admin panel under Admin tools.
+
+©Paul Renner
