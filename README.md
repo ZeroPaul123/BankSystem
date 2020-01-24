@@ -22,7 +22,7 @@ Admin Features:
 1.) Download php files and upload them to your sever.
 2.) change the config.php file to fit your personal server data
 3.) Create 2 tables here is the structure:
-
+```
 CREATE TABLE `Persons` (
   `ID` int(11) NOT NULL,
   `Name` varchar(255) DEFAULT NULL,
@@ -32,7 +32,8 @@ CREATE TABLE `Persons` (
   `Adress` varchar(255) DEFAULT NULL,
   `isAdmin` tinyint(1) NOT NULL DEFAULT 0
 ) 
-
+```
+```
 CREATE TABLE `transaction_log` (
   `senderID` int(11) NOT NULL,
   `receiverID` int(11) NOT NULL,
@@ -41,7 +42,7 @@ CREATE TABLE `transaction_log` (
   `senderEmail` varchar(100) NOT NULL,
   `receiverEmail` varchar(100) NOT NULL
 )
-
+```
 
 4.) Register at the register.php page.
 5.) Go into phpmyadmin and change the "isAdmin" value of your account to "1"
