@@ -47,4 +47,7 @@ CREATE TABLE `transaction_log` (
 5.) Go into phpmyadmin and change the "isAdmin" value of your account to "1"
 6.) You are ready to go, You now have access to the admin panel under Admin tools.
 
+
+Credits to Berfan Korkmaz for the CSS and some inspiration.
+
 ©Paul Renner
