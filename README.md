@@ -24,13 +24,14 @@ Hey ther thanks for checking out my project. This is one of the first projects i
 3. Create 2 tables here is the structure:
 ```
 CREATE TABLE `Persons` (
-  `ID` int(11) NOT NULL,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `Email` varchar(255) DEFAULT NULL,
   `Balance` double NOT NULL DEFAULT 0,
   `Pass` varchar(255) DEFAULT NULL,
   `Adress` varchar(255) DEFAULT NULL,
-  `isAdmin` tinyint(1) NOT NULL DEFAULT 0
+  `isAdmin` tinyint(1) NOT NULL DEFAULT 0,
+   PRIMARY KEY(ID)
 ) 
 ```
 ```
